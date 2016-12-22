@@ -110,7 +110,7 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
                     @Override
                     public void run() {
                         if (mCloseFromCancel) {
-                            SweetAlertDialog.super.cancel();
+                            SweetAlertDialog.super.dismiss();
                         } else {
                             SweetAlertDialog.super.dismiss();
                         }

@@ -1,14 +1,15 @@
 apply plugin: 'com.android.library'
-
-version = VERSION_NAME
-group = GROUP
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.yizeliang'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 21
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
         minSdkVersion 9
+        versionName "2.0"
+        versionCode 20
     }
 
     lintOptions {
@@ -19,5 +20,3 @@ android {
 dependencies {
     compile 'com.pnikosis:materialish-progress:1.0'
 }
-
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'

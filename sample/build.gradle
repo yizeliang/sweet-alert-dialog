@@ -1,11 +1,8 @@
 apply plugin: 'com.android.application'
 
-version = VERSION_NAME
-group = GROUP
-
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 21
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
         minSdkVersion 9
